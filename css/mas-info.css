@@ -1,0 +1,85 @@
+/*MAS INFO*/
+.texto-info{
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.nombre{
+    display: block;
+    height: 5rem;
+    margin: auto;
+}
+
+.seccion{
+    margin-bottom: 3rem;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+.titulo{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+ul{
+    width: 95%;
+    margin-left: 4%;
+}
+
+li{
+    margin-bottom: 0.4rem;
+}
+
+.fuego{
+    font-weight: bold;
+    color: var(--fuego);
+}
+
+.tierra{
+    font-weight: bold;
+    color: var(--tierra);
+}
+
+.aire{
+    font-weight: bold;
+    color: var(--aire);
+}
+
+.agua{
+    font-weight: bold;
+    color: var(--agua);
+}
+
+
+/*Agradecimientos*/
+.agradecimientos{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--rosita);
+    transition: all 0.5s ease;
+}
+
+.link:hover{
+    color: var(--gris);
+}

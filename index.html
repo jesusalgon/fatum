@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Fatum</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/burger-menu.js"></script>
+    <script type="text/javascript" src="js/scroll-suave.js"></script>
+    <script type="text/javascript" src="js/play-animaciones.js"></script>
+    <script type="text/javascript" src="js/play-music.js"></script>
+</head>
+
+<body>
+    <audio src="musica/piano.wav" muted loop id="piano"></audio>
+
+    <!--HEADER-->
+    <header>
+        <img src="img/LOGO FATUM FINAL.png" alt="logo" class="logo">
+        <div class="btn-cabecera">
+            <img src="img/speaker-off.png" alt="" class="altavoz off">
+            <img src="img/speaker0.png" alt="" class="altavoz on">
+            <img src="img/speaker1.png" alt="" class="altavoz on">
+            <img src="img/speaker2.png" alt="" class="altavoz on">
+            <div class="menu-icon" id="btn-menu">
+                <ul>
+                    <li><div class="burger-bar"></div></li>
+                    <li><div class="burger-bar"></div></li>
+                    <li><div class="burger-bar"></div></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <a href="#" id="arriba"></a>
+
+    <div class="cuerpo">
+        <!--MENÚ-->
+        <div class="contenedor-burger" id="contenedor-burger">
+            <div class="secciones-burger">
+                <div id="cerrar-icon"></div>
+                <a href="#menu-signos" class="seccion-burger scroll-suave">
+                    <span class="texto-burger">¿Qué signo eres tú?</span>
+                </a>
+                <a href="#sobre-mi" class="seccion-burger scroll-suave">
+                    <span class="texto-burger">Sobre mí</span>
+                </a>
+                <a href="#boletin" class="seccion-burger scroll-suave">
+                    <span class="texto-burger">Apúntate al boletín</span>
+                </a>
+                <a href="mas-info.html" class="seccion-burger">
+                    <span class="texto-burger">Más info y agradecimientos</span>
+                </a>
+            </div>
+        </div>
+
+        <!--SLIDER PORTADA-->
+        <div class="slider-portada">
+            <!--falta portada-->
+            <video src="anim/slider.webm" alt="slider" class="foto-slider" muted loop></video>
+        </div>
+
+        <!--MENU SIGNOS-->
+        <a href="#" id="menu-signos" class=""></a>
+        <div class="contenedor-menu-signos">
+            <span class="titulo">¿Qué signo eres tú?</span>
+            <div class="menu-signos">
+                <a href="#aries" class="item-menu scroll-suave">
+                    <img src="img/Aries.jpg" alt="aries">
+                    <img src="nombres/aries.png" alt="aries name">
+                </a>
+                <a href="#tauro" class="item-menu scroll-suave">
+                    <img src="img/tauro_.jpg" alt="tauro">
+                    <img src="nombres/tauro.png" alt="tauro name">
+                </a>
+                <a href="#geminis" class="item-menu scroll-suave">
+                    <img src="img/Géminis.jpg" alt="geminis">
+                    <img src="nombres/geminis.png" alt="geminis name">
+                </a>
+                <a href="#cancer" class="item-menu scroll-suave">
+                    <img src="img/Cancer.jpg" alt="cancer">
+                    <img src="nombres/cancer.png" alt="cancer name">
+                </a>
+                <a href="#leo" class="item-menu scroll-suave">
+                    <img src="img/Leo.jpg" alt="leo">
+                    <img src="nombres/leo.png" alt="leo name">
+                </a>
+                <a href="#virgo" class="item-menu scroll-suave">
+                    <img src="img/Virgo.jpg" alt="virgo">
+                    <img src="nombres/virgo.png" alt="virgo name">
+                </a>
+                <a href="#libra" class="item-menu scroll-suave">
+                    <img src="img/Libra.jpg" alt="libra">
+                    <img src="nombres/libra.png" alt="libra name">
+                </a>
+                <a href="#escorpio" class="item-menu scroll-suave">
+                    <img src="img/Escorpio.jpg" alt="escorpio">
+                    <img src="nombres/escorpio.png" alt="escorpio name">
+                </a>
+                <a href="#sagitario" class="item-menu scroll-suave">
+                    <img src="img/Sagitario.jpg" alt="sagitario">
+                    <img src="nombres/sagitario.png" alt="sagitario name">
+                </a>
+                <a href="#capricornoo" class="item-menu scroll-suave">
+                    <img src="img/Capricornio.jpg" alt="capricornoo">
+                    <img src="nombres/capricornio.png" alt="capricornio name">
+                </a>
+                <a href="#acuario" class="item-menu scroll-suave">
+                    <img src="img/Acuario.jpg" alt="acuario">
+                    <img src="nombres/acuario.png" alt="acuario name">
+                </a>
+                <a href="#piscis" class="item-menu scroll-suave">
+                    <img src="img/Piscis.jpg" alt="piscis">
+                    <img src="nombres/piscis.png" alt="piscis name">
+                </a>
+            </div>
+        </div>
+
+        <!--ANIMACIONES-->
+        <div class="contendor-animaciones">
+            <hr class="separador">
+            <a href="" id="aries" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/aries.png" alt="aries name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Aries-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/aries.png" alt="aries name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Sentía cómo ardía por dentro una verdad que tenía que decir. Me estaba comiendo por dentro. Muchas veces antes me habían reprochado que no tenía tacto para decir las cosas. Vaya cantidad de estupideces. Lo malo se dice, igual que se dice lo bueno, sin tanto adorno. Yo no soy así, no como ellos quieren. No pude evitar taladrar con la mirada al que tenía enfrente, mi compañero de vida, la persona que más amo en el mundo. Y al que estaba viendo dirigirse con los ojos vendados directo a un precipicio. Las palabras se cayeron de mi boca, una tras otra, sin atisbo de duda, porque sabía que era lo que tenía que hacer. Se lo tengo que decir, aunque sepa que vaya a perderlo después.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Fuego <br>
+                                <span class="negrita">Polaridad:</span> Positivo <br>
+                                <span class="negrita">Modalidad:</span> Cardinal <br>
+                                <span class="negrita">Planeta regente:</span> Marte 
+                            </p>
+                            <p>
+                                Aries es un signo activo, dinámico y con iniciativa, que se autoafirma a través de sus palabras y actos. Es sincero y espontáneo. Actúa intuitivamente, sin pensar. Su manifestación, franca y directa, adolece frecuentemente de diplomacia. Es valeroso y luchador, busca desafíos y se siente a gusto siendo pionero en algo, iniciando cosas o liderando nuevos proyectos. Los problemas de este signo aparecen cuando su agresividad está mal encauzada. En esos casos puede ser desconsiderado e incluso violento de palabra o acto. Otro factor negativo puede ser la falta de perseverancia, pues cuando la acción emprendida ya no presenta retos se aburre con la rutina y su espíritu guerrero sale a buscar nuevos desafíos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="tauro" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/tauro.png" alt="tauro name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Tauro-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/tauro.png" alt="tauro name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Cada centímetro de mi piel estaba sedienta de su tacto. No podía dejar de pensar en sumergirme en su olor durante un año. Una década. Un siglo. Perder mi propia esencia para quedarme a vivir bajo sus músculos. Dejar de ser una. 
+                                    <br> Tengo la garganta cerrada, no puedo emitir ningún sonido. Estoy en llamas. Tanto, que la brisa que entra por la ventana apenas refresca la habitación. Ahora siento como las yemas de sus dedos rozan mi antebrazo, y una corriente eléctrica atraviesa mi cuerpo. Es como meter los pies descalzos en la tierra mojada. Como oler la hierba recién cortada. Si esto es así ahora, ¿qué pasará cuando me abrace?
+                                    <br> Abro los ojos, dispuesta a enfrentarme al incendio. Y lo que encontré frente a mi fueron tus pupilas avivando el fuego.  
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Tierra <br>
+                                <span class="negrita">Polaridad:</span> Negativo <br>
+                                <span class="negrita">Modalidad:</span> Fijo <br>
+                                <span class="negrita">Planeta regente:</span> Venus 
+                            </p>
+                            <p>
+                                Tauro es un signo receptivo, firme y estable, y tiende a afianzarse en el mundo de lo concreto. Es prudente y más bien lento, pero cuando actúa lo hace con determinación y perseverancia. Busca seguridad en el plano material y/o emocional. Es afectivo y su sensualidad es una característica destacada que le inclina a experimentar el mundo a través del arte y de los sentidos físicos. Los conflictos de este signo están relacionados con actitudes posesivas e inmovilistas. De ello pueden derivarse celos, conductas obstinadas, y rencor. Otros factores problemáticos son su timidez y la pasividad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="geminis" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/geminis.png" alt="geminis name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Geminis-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/geminis.png" alt="geminis name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    En un mundo de ruido, de gritos, de exceso de luces y opiniones, yo te escucho. Y te escucharé siempre. No me importará nunca si lo que me cuentas ya me lo has dicho otras mil veces. Tampoco me importará que no me importe. Me dará igual si tu punto de vista es egoísta, si te equivocas o si te ciega la rabia. Puedes contar con que tu voz llegará hasta mi, estés donde estés, y que sabré entenderte. Porque yo soy parte de ti, y tú de mi. Y eso, no hay kilómetros ni idiomas que puedan destruirlo. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Aire <br>
+                                <span class="negrita">Polaridad:</span> Positivo <br>
+                                <span class="negrita">Modalidad:</span> Mutable <br>
+                                <span class="negrita">Planeta regente:</span> Mercurio 
+                            </p>
+                            <p>
+                                Géminis es un signo mental, cambiante y adaptable. Busca comunicarse, aprender, intercambiar opiniones, informarse y conectar con todo aquello que alimente su inagotable curiosidad. Suele interesarse por la lectura y la escritura. Su mente es lógica y secuencial, y tiene capacidad para valorar desapegadamente opiniones diferentes a la suya. El problema de este signo puede estar en su dispersión e inconstancia. También puede haber charlatanería y superficialidad. Otros factores conflictivos son su nerviosismo y la dificultad para conectar con las emociones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="cancer" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/cancer.png" alt="cancer name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Cancer-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/cancer.png" alt="cancer name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Dentro de mi hay todo un mar. Una masa de agua incontrolable, inabarcable, indómita. A partes iguales da la vida y la quita. A veces, la máxima expresión de la tranquilidad y la paz; y a veces, la lucha más feroz y la causa más perdida. Cada nuevo coral, cada diatomea, cada medusa y cada ballena hacen el todo y, también, no significan nada. Hay mucho más que serenas olas que lamen la orilla, y mucho más que el reflejo de la luna en la noche más romántica. 
+                                    <br> Pero qué más da lo que te cuente. No vas a entender lo que soy en la vida. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Agua <br>
+                                <span class="negrita">Polaridad:</span> Negativo <br>
+                                <span class="negrita">Modalidad:</span> Cardinal <br>
+                                <span class="negrita">Planeta regente:</span> Luna 
+                            </p>
+                            <p>
+                                Cáncer es un signo emotivo, maternal e instintivo. Tiene el impulso de proteger y cuidar, y también de ser protegido y cuidado. Su sensibilidad receptiva hace que capte el clima emocional en los ambientes. Tiene necesidad de autoprotección y se orienta hacia el hogar y la familia, aunque también puede pasar por épocas de nomadismo. Siente atracción por el pasado, y son importantes sus recuerdos personales. Los conflictos de este signo están vinculados a su susceptibilidad que le lleva a actitudes de retraimiento y hermetismo. También manifiesta impaciencia, frecuentes cambios de humor y conductas fuera de toda lógica. Otros factores frecuentes son la timidez y la inercia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="leo" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/leo.png" alt="leo name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Leo 2-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/leo.png" alt="leo name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Atento. Esta es la calma que precede a la tormenta. Todo está tranquilo en mi cabeza y en mi corazón. Ya lo he sentido antes, es como si te hubieran inyectado morfina en el alma y estás adormecida. Demasiado silencio por dentro. 
+                                    <br> No te dejes engañar, esto no es la normalidad. Es tan solo el comienzo de algo que va a explotar y va a poner del revés tu mundo. Algo divertido, disparatado, loco y extravagante. Demasiado agitado. Demasiado divertido. 
+                                    <br> Fíjate bien y no dejes de mirar. Podrás ver estallar el vendaval en cualquier momento. Y tú estarás en mitad del ojo de la tormenta.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Fuego <br>
+                                <span class="negrita">Polaridad:</span> Positivo <br>
+                                <span class="negrita">Modalidad:</span> Fijo <br>
+                                <span class="negrita">Planeta regente:</span> Sol 
+                            </p>
+                            <p>
+                                Leo es un signo activo, extrovertido, afectivo, vital y apasionado. Se autoexpresa de forma creativa, y disfruta con los juegos. Es noble, responsable y leal. De su presencia emana un carisma y una autoridad innata. Tiene confianza en sí mismo y gran capacidad para organizar y dirigir. Es protector, generoso y magnánimo. El problema de este signo está relacionado con el orgullo y su necesidad de prestigio y reconocimiento, que puede derivar en ostentación o altivez, así como en actitudes teatrales en las que busca compulsivamente ser el centro. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="virgo" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/virgo.png" alt="virgo name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Virgo-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/virgo.png" alt="virgo name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Que esté mirando atrás no significa que puedas juzgarme. No significa, tampoco, que eche de menos lo que he dejado pasar. O que vaya a volver corriendo a tus brazos, desconsolada, esperando a que me des una segunda oportunidad. Que no se te pase por la cabeza esa escena en la que me tienes delante, llorando, implorando que me perdones y me aceptes de nuevo. De eso, nada. 
+                                    <br> Hace mucho que se acabó el tiempo de descuento, y ni tus ganas ni mis dudas consiguieron solucionar lo que (no) había entre nosotros. Se terminó. Es tiempo de dejar morir al árbol para que nazca, fuerte, el brote de algo nuevo. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Tierra <br>
+                                <span class="negrita">Polaridad:</span> Negativo <br>
+                                <span class="negrita">Modalidad:</span> Mutable <br>
+                                <span class="negrita">Planeta regente:</span> Mercurio 
+                            </p>
+                            <p>
+                                Virgo es un signo analítico, meticuloso y perfeccionista. Busca la comprensión y el orden en el mundo material, centrándose en lo práctico y aplicando una lógica concreta. Tiene gran capacidad para un discernimiento metódico y razonado. Es servicial, trabajador, y necesita sentirse útil. Frecuentemente su atención se dirige hacia la salud y el cuidado del cuerpo. Los conflictos de este signo están relacionados con sentimientos de infravaloración social, la introversión y la timidez. También puede ser demasiado escéptico, crítico y puntilloso. A veces puede haber estallidos de rebelión compensatoria y mostrar descontrol.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="libra" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/libra.png" alt="libra name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Libra-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/libra.png" alt="libra name" class="nombre pc">
+                            <div class="relato">
+                                <p class="poema">
+                                    No nos hace falta más
+                                    <br> que una mirada, chocando
+                                    <br> a la velocidad más alta
+                                    <br> que podamos alcanzar.
+                                    <br> Solo un murmullo, un ronroneo
+                                    <br> y ya sé qué quieres decir,
+                                    <br> aunque no digas una palabra
+                                    <br> ¿acaso crees que no te veo?
+                                    <br>
+                                    <br> Conectamos, lo siento
+                                    <br> tan dentro como mis latidos.
+                                    <br> O como los tuyos.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Aire <br>
+                                <span class="negrita">Polaridad:</span> Positivo <br>
+                                <span class="negrita">Modalidad:</span> Cardinal <br>
+                                <span class="negrita">Planeta regente:</span> Venus 
+                            </p>
+                            <p>
+                                Libra es un signo que necesita establecer relaciones interpersonales fluidas, basadas en el entendimiento y la armonía. Manifiesta una gran sensibilidad hacia la estética, la belleza y el arte. Muestra refinamiento y elegancia, busca agradar y se expresa con tacto y diplomacia. Tiene sentido de la justicia y evalúa las situaciones imparcialmente, buscando el equilibrio. Los conflictos de este signo derivan de la superficialidad y la indecisión. Puede haber una marcada tendencia hacia la apariencia externa y el gusto por presumir. Frecuentemente huye de los conflictos y desafíos que se le plantean, buscando la indolencia de una vida fácil. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="escorpio" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/escorpio.png" alt="escorpio name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Escorpio-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/escorpio.png" alt="escorpio name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    Déjame mirarte mejor, para que pueda verte. No me hace falta mucho más,  ¿sabes? Veo lo que hay en ti, y es bello. Y tranquilo. Es como las algas marinas, meciéndose al compás de la brisa marina. Como un revoltijo de pececitos, recreando un tornado perfecto. Casi perfecto. Porque las cosas que son perfectas, al final, pierden su gracia. Es como la danza de una medusa, preciosa y peligrosa, alrededor de un coral. Como el canto profundo de una ballena, que atraviesa el océano. Igual que tú presencia atraviesa el aire hasta mi. 
+                                    <br> Qué curioso. Aún no hemos hablado y ya te conozco mejor que tú. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Agua <br>
+                                <span class="negrita">Polaridad:</span> Negativo <br>
+                                <span class="negrita">Modalidad:</span> Fijo <br>
+                                <span class="negrita">Planeta regente:</span> Plutón y Marte 
+                            </p>
+                            <p>
+                                Escorpio es un signo de emociones intensas y apasionadas, pero secretas y controladas. Su tendencia a una regeneración constante se manifiesta mediante los procesos de muerte y renacimiento en vida de los que sale fortalecido. Le interesa aquello que es oculto o marginal, y todo lo referente a la sexualidad y la muerte. Tiene una gran capacidad de penetración y es muy certero en sus apreciaciones. La problemática de este signo se vincula a episodios atormentados y autodestructivos. Cuando explota puede ser cruel y brutal. Igualmente puede manifestar deseos compulsivos y desenfrenados, unidos a veces a celos, rencor o venganza. Su contención tensa puede despertar inquietud en los demás.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="sagitario" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/sagitario.png" alt="sagitario name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Sagitario-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/sagitario.png" alt="sagitario name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    “¿A tu edad, una moto?” ¿Pero cómo que vas a salir de fiesta?” ¿En serio tienes que ponerte esa camiseta, abuelo?” ¡Si supierais lo poco que me importa todo eso!
+                                    <br> Puedo decir que estos huesos han sobrevivido a tres o cuatro crisis económicas - serán más o menos dependiendo de a quién preguntes -, otras tantas revueltas sociales, más 5 atentados terroristas y algún que otro puñal directo al corazón. Esta piel se ha mojado y secado tantas veces que ha perdido la sensibilidad al agua, diría yo. Me he quemado al sol y me he pelado de frío, también. No he visto muchos países diferentes al mío, 4 o 5 creo recordar. Pero he conocido a suficientes personas como para enamorarme de la humanidad. A veces me han gustado unas comidas que, a la vuelta de unos años, he aborrecido. Y luego me han vuelto a gustar, qué cosas. 
+                                    <br> No, nieto, no estoy loco. Lo que me pasa es que conservo las mismas ganas de vivir de cuando tenía tu edad. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Fuego <br>
+                                <span class="negrita">Polaridad:</span> Positivo <br>
+                                <span class="negrita">Modalidad:</span> Mutable <br>
+                                <span class="negrita">Planeta regente:</span> Júpiter
+                            </p>
+                            <p>
+                                Sagitario es un signo expansivo, jovial y optimista, con capacidad para transmitir entusiasmo. Busca descubrir nuevos horizontes mediante viajes a lugares lejanos, aventuras y actividades al aire libre. Es muy idealista y siente una fuerte inclinación natural hacia la filosofía y la espiritualidad. Es independiente, audaz, intuitivo y confía en el futuro. Tiene espíritu de justicia y sentido del honor. Los problemas de este signo están relacionados con la exageración y la falta de medida. Puede ser imprudente y adolecer de un exceso de confianza. También puede sermonear y mostrarse fanático o intolerante con las ideas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador">
+            <a href="" id="piscis" class=""></a>
+            <div class="contenedor-animacion">
+                <img src="nombres/piscis.png" alt="piscis name" class="nombre movil">
+                <div class="animacion">
+                    <video src="anim/Piscis-1.webm" class="animacion-video"  muted loop></video>
+                    <div class="texto-signo">
+                        <div class="contenedor-signo-relato">
+                            <img src="nombres/piscis.png" alt="piscis name" class="nombre pc">
+                            <div class="relato">
+                                <p>
+                                    No sé cómo ni por dónde, pero tengo que escapar de aquí. El ruido es demasiado y el aire es muy espeso a mi alrededor. ¿No te has sentido nunca como si necesitases escapar de tu propia piel? Que no te representa, que te oprime, que te aprieta el corazón y los huesos y no te deja representar tu realidad. Como si fueses un mal actor interpretando un papel que no te pega. 
+                                    <br> Hay muchas voces en mi cabeza gritando lo que valgo y lo que no, lo que debo ser y todo lo que nunca llegaré a ser. Quiero salir de mi cuerpo, volar por encima de todos vosotros. Dejar a la vista la verdadera esencia de mi misma, y haceros entender que vosotros podéis hacer igual que yo. 
+                                    <br> Ojalá pudiésemos dejar de sentirnos como productos en serie fabricados por una máquina que dejó de funcionar hace mucho tiempo. 
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador pc"></hr>
+                        <div class="datos-signo">
+                            <p>
+                                <span class="negrita">Elemento:</span> Agua <br>
+                                <span class="negrita">Polaridad:</span> Negativo <br>
+                                <span class="negrita">Modalidad:</span> Mutable <br>
+                                <span class="negrita">Planeta regente:</span> Neptuno y Júpiter
+                            </p>
+                            <p>
+                                Piscis es un signo muy emotivo, sensible y compasivo. Existe un potencial de mediumnidad y una desarrollada percepción psíquica le permite captar la vibración que emite una persona  o un lugar. Su gran empatía le capacita para establecer vínculos humanos con sensibilidad. Se entrega a los demás generosamente, con abnegación, sacrificio y renuncia. Su espiritualidad es mística y devocional. Los conflictos de este signo están relacionados con la ausencia de límites, la confusión y el escapismo. Puede perderse en las relaciones, engañar  o autoengañarse y huir de la realidad. Es muy influenciable, y su vulnerabilidad emocional le hace propenso a sufrir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--SOBRE MI-->
+        <a href="#" id="sobre-mi" class=""></a>
+        <div class="contenedor-sobre-mi">
+            <img src="nombres/sobre-mi.PNG">
+            <div class="sobre-mi">
+                <img src="img/sobre-mi.jpeg" alt="mi foto" class="sobre-mi-img">
+                <div class="divisor">
+
+                </div>
+                <p class="texto-sobre-mi">
+                    ¡Hola! Si has llegado hasta aquí significa que te interesa mucho el horóscopo o el zodiaco. Eso… o que te he pasado el link
+                    <br>
+                    <br> Mi nombre es Sandra López Romarís y si ves esto es porque he terminado mi grado superior de ilustración, ¡por fin! Como puedes observar, el mundo del arte me gusta muchísimo: pintura, ilustración, fotografía, escultura, música… Pero lo que más me apasiona es dibujar.
+                    <br>
+                    <br> Normalmente me gano un dinerillo realizando <a href="http://drawingpaws.es/" target="_blank">retratos de mascotas</a>, aunque, me gustaría hacer algo más allá de eso. Por ello, considero mi TFG (esta maravillosa página y unas cuantas cosas más que, si las quieres ver, puedes preguntarme por email o instagram) un gran reto para mí. Siempre se me ha dado bastante mal dibujar personas, aunque me encantan los retratos. De eso me he dado cuenta practicando fotografía. A su vez, siempre me ha gustado el tema horóscopo y zodiaco, los 12 signos (bastante dibujables),  el trasfondo de cada signo, en qué se basan para definir a cada uno…
+                    <br>
+                    <br> Después de tener todas mis ideas claras, dejé que mi mano hiciese el resto y este es el resultado. Así que... ¡espero que lo disfrutéis!
+                </p>
+            </div>
+        </div>
+
+        <!--BOLETIN-->
+        <hr class="separador">
+        <a href="#" id="boletin" class=""></a>
+        <div class="contenedor-boletin">
+            <p>
+                ¿Te has quedado con ganas de más? <br>
+                Suscríbete ahora al boletín y recibiras el set exclusivo de wallpapers del zodiaco.
+            </p>
+            <!-- Begin Mailchimp Signup Form -->
+            <!--<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">-->
+            <style type="text/css">
+                #mc_embed_signup{background:#dda89e; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <style type="text/css">
+                #mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+                #mergeRow-gdpr {margin-top: 20px;}
+                #mergeRow-gdpr fieldset label {font-weight: normal;}
+                #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+            </style>
+            <div id="mc_embed_signup">
+            <form action="https://drawingpaws.us10.list-manage.com/subscribe/post?u=dfcdd1da9f65c789b328bc925&amp;id=ca326b2ef6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                
+                <input type="email" value="" name="EMAIL" class="email" id="caja-boletin" placeholder="Consigue tus wallpapers" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dfcdd1da9f65c789b328bc925_ca326b2ef6" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Enviar" name="subscribe" id="btn-boletin"></div>
+                </div>
+            </form>
+            </div>
+
+            <!--
+                <form action="">
+                    <input type="email" id="caja-boletin" placeholder="Consigue tus wallpapers"> 
+                    <input type="submit" name="btn-boletin" id="bnt-boletin" value="Enviar">
+                </form>
+            -->
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="filtro-footer">
+                <a href="mailto:holi@drawingpawsilustracion.es" class="red">
+                    <img src="img/email.png" alt="" class="red-icon">
+                    <p>
+                        holi@drawingpawsilustracion.es
+                    </p>
+                </a>
+                <a href="https://www.instagram.com/drawingpaws_ilustracion/" class="red">
+                    <img src="img/insta.png" alt="" class="red-icon">
+                    <p>@drawingpaws_ilustracion</p>
+                </a>
+                <a href="https://www.facebook.com/drawingpawsilustracion/" class="red">
+                    <img src="img/facebook.png" alt="" class="red-icon">
+                    <p>drawingpawsilustracion</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--FLECHA ARRIBA-->
+    <a href="#arriba" class="contenedor-arriba volver-arriba" id="flecha-arriba">
+        <img src="img/flecha 2.png" alt="flecha arriba" class="ir-arriba" id="btn-arriba">
+    </a>
+
+</body>
