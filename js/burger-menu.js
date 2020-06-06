@@ -5,8 +5,7 @@ function inicio(){
 
 var propMenu = {
     btn_menu: null,
-    contenedor: null,
-    btn_cerrar: null, 
+    contenedor: null, 
     flecha: null,
     elementos_menu: null
 } 
@@ -22,20 +21,21 @@ var metMenu = {
 
     inicio: function(){
         this.init_propiedades();
-        propMenu.btn_menu.addEventListener("click", this.aparece_menu);
-        propMenu.btn_cerrar.addEventListener("click", this.desaparece_menu);
+        propMenu.btn_menu.addEventListener("click", this.mueve_menu);
         window.addEventListener("scroll", this.aparecer_flecha);
         for (elem of propMenu.elementos_menu){
             elem.addEventListener("click", this.desaparece_menu);
         }
     },
 
-    aparece_menu: function(){
-        propMenu.contenedor.style.right = "0%";
-    },
-
-    desaparece_menu: function(){
-        propMenu.contenedor.style.right = "-100%"
+    mueve_menu: function(){
+        if (propMenu.btn_menu.className == "menu-icon"){
+            propMenu.contenedor.style.top = "5rem";
+            propMenu.btn_menu.className += " cruz";
+        } else {
+            propMenu.contenedor.style.top = "-100%";
+            propMenu.btn_menu.className = propMenu.btn_menu.className.replace(" cruz", "");
+        }
     },
 
     aparecer_flecha: function(){
