@@ -6,6 +6,7 @@ function inicio(){
 var propMenu = {
     btn_menu: null,
     contenedor: null, 
+    secciones: null,
     flecha: null,
     elementos_menu: null
 } 
@@ -14,6 +15,7 @@ var metMenu = {
     init_propiedades: function(){
         propMenu.btn_menu = document.getElementById("btn-menu");
         propMenu.contenedor = document.getElementById("contenedor-burger");
+        propMenu.secciones = document.getElementsByClassName("seccion-burger");
         propMenu.btn_cerrar = document.getElementById("cerrar-icon");
         propMenu.flecha = document.getElementById("flecha-arriba");
         propMenu.elementos_menu = document.getElementsByClassName("seccion-burger");
@@ -33,9 +35,13 @@ var metMenu = {
             propMenu.contenedor.style.top = "5rem";
             propMenu.btn_menu.className += " cruz";
         } else {
-            propMenu.contenedor.style.top = "-100%";
-            propMenu.btn_menu.className = propMenu.btn_menu.className.replace(" cruz", "");
+            metMenu.desaparece_menu();
         }
+    },
+
+    desaparece_menu: function(){
+        propMenu.contenedor.style.top = "-100%";
+        propMenu.btn_menu.className = propMenu.btn_menu.className.replace(" cruz", "");
     },
 
     aparecer_flecha: function(){

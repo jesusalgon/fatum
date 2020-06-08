@@ -32,13 +32,11 @@ var metPlay = {
 
         // Música
         propPlay.off = document.getElementsByClassName("off")[0];
-        propPlay.on = document.getElementsByClassName("on");
+        propPlay.on = document.getElementsByClassName("on")[0];
         propPlay.piano = document.getElementById("piano");
 
         propPlay.off.addEventListener("click", this.play_music);
-        for (elem of propPlay.on){
-            elem.addEventListener("click", this.pause_music);
-        }
+        propPlay.on.addEventListener("click", this.pause_music);
     },
 
     pause_and_play: function(){
@@ -58,38 +56,16 @@ var metPlay = {
     },
 
     play_music: function(){
+        propPlay.on.style.display = "block";
         propPlay.off.style.display = "none";
-        metPlay.speaker_animation(true);
 
         propPlay.piano.play();
     },
 
     pause_music: function(){
-        metPlay.speaker_animation(false);
         propPlay.off.style.display = "block";
+        propPlay.on.style.display = "none"
 
         propPlay.piano.pause();
-    },
-
-    speaker_animation: function(activar){
-        propPlay.contador_intervalo = 0;
-        if (activar){
-            propPlay.intervalo = window.setInterval(function(){
-                for (i=0; i<propPlay.on.length; i++){
-                    if (i == propPlay.contador_intervalo){
-                        propPlay.on[i].style.display = "block";
-                    } else {
-                        propPlay.on[i].style.display = "none";
-                    }
-                }
-                
-                propPlay.contador_intervalo = (propPlay.contador_intervalo + 1) % propPlay.on.length;
-            }, 700);
-        } else {
-            clearInterval(propPlay.intervalo);
-            for (elem of propPlay.on){
-                elem.style.display = "none";
-            }
-        }
     }
 }

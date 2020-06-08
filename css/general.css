@@ -56,6 +56,9 @@ header{
     padding: 1rem 3rem;
     background-color: white;
     z-index: 10;
+    display: none;
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 .logo{
@@ -101,6 +104,9 @@ header{
 .cuerpo{
     position: relative;
     top: 6rem;
+    display: none;
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 .altavoz{

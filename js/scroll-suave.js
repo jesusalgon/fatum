@@ -32,6 +32,7 @@ var metScroll = {
         destino = this.getAttribute("href");
         distancia = document.querySelector(destino).offsetTop;
 
+        clearInterval(propScroll.intervalo);
         propScroll.intervalo = setInterval(function(){
             if (propScroll.posicion < distancia){
                 propScroll.posicion += 100;
@@ -58,6 +59,7 @@ var metScroll = {
         propScroll.posicion = window.pageYOffset;
         destino = this.getAttribute("href");
 
+        clearInterval(propScroll.intervalo);
         propScroll.intervalo = setInterval(function(){
             if (propScroll.posicion > 0){
                 propScroll.posicion -= 100;

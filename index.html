@@ -13,19 +13,28 @@
     <script type="text/javascript" src="js/scroll-suave.js"></script>
     <script type="text/javascript" src="js/play-animaciones.js"></script>
     <script type="text/javascript" src="js/play-music.js"></script>
+    <script type="text/javascript" src="js/pantalla-carga.js"></script>
 </head>
 
 <body>
     <audio src="musica/piano.wav" loop id="piano"></audio>
+
+    <div class="pantalla-carga">
+        <div class="estrellas">
+            <div class="bienvenida">
+                <span>Bienvenido a Fatum</span>
+                <img src="img/loading.png" alt="" class="loading" id="load">
+                <div class="loaded" id="btn-carga">Entrar</div>
+            </div>
+        </div>
+    </div>
 
     <!--HEADER-->
     <header>
         <img src="img/LOGO FATUM FINAL.png" alt="logo" class="logo">
         <div class="btn-cabecera">
             <img src="img/speaker-off.png" alt="" class="altavoz off">
-            <img src="img/speaker0.png" alt="" class="altavoz on">
-            <img src="img/speaker1.png" alt="" class="altavoz on">
-            <img src="img/speaker2.png" alt="" class="altavoz on">
+            <img src="img/speaker-on.gif" alt="" class="altavoz on">
             <div class="menu-icon" id="btn-menu">
                 <div class="burger-bar"></div>
             </div>
@@ -56,7 +65,7 @@
         <!--SLIDER PORTADA-->
         <div class="slider-portada">
             <!--falta portada-->
-            <video src="anim/slider.webm" alt="slider" class="foto-slider" muted loop></video>
+            <video src="anim/slider.mp4" alt="slider" class="foto-slider" muted loop></video>
         </div>
 
         <!--MENU SIGNOS-->
@@ -122,7 +131,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/aries.png" alt="aries name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Aries-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Aries-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/aries.png" alt="aries name" class="nombre pc">
@@ -153,7 +162,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/tauro.png" alt="tauro name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Tauro-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Tauro-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/tauro.png" alt="tauro name" class="nombre pc">
@@ -186,7 +195,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/geminis.png" alt="geminis name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Geminis-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Geminis-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/geminis.png" alt="geminis name" class="nombre pc">
@@ -217,7 +226,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/cancer.png" alt="cancer name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Cancer-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Cancer-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/cancer.png" alt="cancer name" class="nombre pc">
@@ -249,7 +258,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/leo.png" alt="leo name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Leo 2-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Leo 2-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/leo.png" alt="leo name" class="nombre pc">
@@ -282,7 +291,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/virgo.png" alt="virgo name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Virgo-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Virgo-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/virgo.png" alt="virgo name" class="nombre pc">
@@ -314,7 +323,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/libra.png" alt="libra name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Libra-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Libra-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/libra.png" alt="libra name" class="nombre pc">
@@ -356,7 +365,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/escorpio.png" alt="escorpio name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Escorpio-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Escorpio-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/escorpio.png" alt="escorpio name" class="nombre pc">
@@ -388,7 +397,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/sagitario.png" alt="sagitario name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Sagitario-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Sagitario-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/sagitario.png" alt="sagitario name" class="nombre pc">
@@ -421,7 +430,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/capricornio.png" alt="capricornio name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Capricornio-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Capricornio-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/capricornio.png" alt="capricornio name" class="nombre pc">
@@ -454,7 +463,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/acuario.png" alt="acuario name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Acuario 4-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Acuario 4-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/acuario.png" alt="acuario name" class="nombre pc">
@@ -488,7 +497,7 @@
             <div class="contenedor-animacion">
                 <img src="nombres/piscis.png" alt="piscis name" class="nombre movil">
                 <div class="animacion">
-                    <video src="anim/Piscis-1.webm" class="animacion-video"  muted loop></video>
+                    <video src="anim/Piscis-1.mp4" class="animacion-video"  muted loop></video>
                     <div class="texto-signo">
                         <div class="contenedor-signo-relato">
                             <img src="nombres/piscis.png" alt="piscis name" class="nombre pc">
