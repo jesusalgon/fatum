@@ -27,7 +27,6 @@ var metCarga = {
     },
 
     carga_contenido: function(){
-        console.log("dentro contenido")
         propCarga.pantalla.style.opacity = "0";
 
         propCarga.header.style.display = "flex";
